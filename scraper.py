@@ -132,6 +132,9 @@ def extract_penalties_from_events(events: list, meta: dict) -> list[dict]:
         vz = classify_vertical(end_z) if end_z is not None else None
         zone = classify_zone(hz, vz) if (hz and vz) else None
 
+        # Freeze-frame / scene features (Phase 2: pre-kick read signal)
+        ffx = extract_freeze_frame_features(shot, event.get("location"))
+
         penalties.append({
             "match_id": meta["match_id"],
             "competition": meta["competition"],
@@ -160,9 +163,74 @@ def extract_penalties_from_events(events: list, meta: dict) -> list[dict]:
             "shot_zone_horizontal": hz,
             "shot_zone_vertical": vz,
             "shot_zone": zone,
+            # ── Freeze-frame features (nullable; ~12% coverage) ──
+            "has_freeze_frame": ffx["has_freeze_frame"],
+            "gk_y_offset": ffx["gk_y_offset"],
+            "gk_depth": ffx["gk_depth"],
+            "ff_defenders": ffx["ff_defenders"],
+            "ff_teammates": ffx["ff_teammates"],
+            "taker_y_offset": ffx["taker_y_offset"],
         })
 
     return penalties
+
+
+def extract_freeze_frame_features(shot: dict, taker_loc) -> dict:
+    """
+    Extract goalkeeper-positioning + scene features from the StatsBomb 360
+    freeze frame, captured at the moment of the shot.
+
+    This is the cheapest path toward the 'run-up / pre-kick read' signal that
+    separates history-only models (~60%) from models that can see the keeper and
+    scene (~85-89% with full pose). Coverage is sparse (~12% of penalties have a
+    usable freeze frame), so every field is nullable and the modeling code treats
+    missing values as "unknown".
+
+    Pitch coordinate system (StatsBomb): 120 long x 80 wide. Goal line at x=120,
+    goal mouth y in [36, 44], center y=40.
+
+    Returns:
+      gk_y_offset   — keeper lateral offset from center (+ = keeper's right,
+                      toward higher y). A pre-leaning keeper is readable.
+      gk_depth      — keeper distance off the goal line (120 - gk_x). Larger =
+                      keeper has come off the line (rushing).
+      ff_defenders  — count of non-GK opponents in the frame (encroachment).
+      ff_teammates  — count of attacking teammates in the frame (rebound setup).
+      taker_y_offset— taker's lateral setup offset from center at shot moment
+                      (a proxy for run-up angle / approach side).
+      has_freeze_frame — 1 if a usable frame existed, else 0.
+    """
+    ff = shot.get("freeze_frame", []) or []
+    out = {
+        "gk_y_offset": None,
+        "gk_depth": None,
+        "ff_defenders": None,
+        "ff_teammates": None,
+        "taker_y_offset": None,
+        "has_freeze_frame": 0,
+    }
+    if not ff:
+        return out
+
+    out["has_freeze_frame"] = 1
+    defenders = teammates = 0
+    for f in ff:
+        is_gk = f.get("position", {}).get("name") == "Goalkeeper"
+        is_teammate = f.get("teammate") is True
+        loc = f.get("location") or []
+        if is_gk and f.get("teammate") is False and len(loc) >= 2:
+            out["gk_y_offset"] = round(loc[1] - GOAL_Y_CENTER, 3)
+            out["gk_depth"] = round(120.0 - loc[0], 3)
+        elif is_teammate:
+            teammates += 1
+        else:
+            defenders += 1
+
+    out["ff_defenders"] = defenders
+    out["ff_teammates"] = teammates
+    if taker_loc and len(taker_loc) >= 2:
+        out["taker_y_offset"] = round(taker_loc[1] - GOAL_Y_CENTER, 3)
+    return out
 
 
 def process_match(mid: int, meta: dict) -> list[dict]:

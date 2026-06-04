@@ -1,0 +1,105 @@
+{
+  "population_rates": {
+    "direction": {
+      "Right": 0.466,
+      "Left": 0.4241,
+      "Center": 0.1099
+    },
+    "zone": {
+      "Bottom-Right": 0.288,
+      "Bottom-Left": 0.2775,
+      "Mid-Right": 0.1047,
+      "Mid-Left": 0.0995,
+      "Top-Right": 0.0733,
+      "Top-Center": 0.0524,
+      "Top-Left": 0.0471,
+      "Bottom-Center": 0.0314,
+      "Mid-Center": 0.0262
+    },
+    "height": {
+      "Low": 0.5969,
+      "Mid": 0.2304,
+      "High": 0.1728
+    }
+  },
+  "foot_specific_rates": {
+    "Right Foot": {
+      "direction": {
+        "Left": 0.5,
+        "Right": 0.3649,
+        "Center": 0.1351
+      },
+      "zone": {
+        "Bottom-Left": 0.3176,
+        "Bottom-Right": 0.25,
+        "Mid-Left": 0.1351,
+        "Mid-Right": 0.0811,
+        "Top-Center": 0.0676,
+        "Top-Left": 0.0473,
+        "Mid-Center": 0.0405,
+        "Top-Right": 0.0338,
+        "Bottom-Center": 0.027
+      }
+    },
+    "Left Foot": {
+      "direction": {
+        "Right": 0.5625,
+        "Left": 0.3438,
+        "Center": 0.0938
+      },
+      "zone": {
+        "Bottom-Right": 0.3021,
+        "Bottom-Left": 0.2188,
+        "Mid-Right": 0.1458,
+        "Top-Right": 0.1146,
+        "Mid-Left": 0.1042,
+        "Top-Center": 0.0417,
+        "Bottom-Center": 0.0312,
+        "Top-Left": 0.0208,
+        "Mid-Center": 0.0208
+      }
+    }
+  },
+  "feature_columns": [
+    "is_right_foot",
+    "is_shootout",
+    "competition_tier",
+    "is_knockout",
+    "minute_bucket",
+    "is_extra_time",
+    "player_hist_left",
+    "player_hist_center",
+    "player_hist_right",
+    "player_hist_low_pct",
+    "player_penalty_count",
+    "player_conversion_rate",
+    "has_freeze_frame",
+    "gk_y_offset",
+    "gk_depth",
+    "ff_defenders",
+    "ff_teammates",
+    "taker_y_offset"
+  ],
+  "directions": [
+    "Center",
+    "Left",
+    "Right"
+  ],
+  "zones": [
+    "Bottom-Center",
+    "Bottom-Left",
+    "Bottom-Right",
+    "Mid-Center",
+    "Mid-Left",
+    "Mid-Right",
+    "Top-Center",
+    "Top-Left",
+    "Top-Right"
+  ],
+  "heights": [
+    "High",
+    "Low",
+    "Mid"
+  ],
+  "intent_source": "goals"
+}

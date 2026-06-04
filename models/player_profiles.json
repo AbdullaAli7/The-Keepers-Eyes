@@ -1,0 +1,5944 @@
+{
+  "intent_source": "goals",
+  "population_rates": {
+    "direction": {
+      "Right": 0.466,
+      "Left": 0.4241,
+      "Center": 0.1099
+    },
+    "zone": {
+      "Bottom-Right": 0.288,
+      "Bottom-Left": 0.2775,
+      "Mid-Right": 0.1047,
+      "Mid-Left": 0.0995,
+      "Top-Right": 0.0733,
+      "Top-Center": 0.0524,
+      "Top-Left": 0.0471,
+      "Bottom-Center": 0.0314,
+      "Mid-Center": 0.0262
+    },
+    "height": {
+      "Low": 0.5969,
+      "Mid": 0.2304,
+      "High": 0.1728
+    }
+  },
+  "prior_strength": 3.0,
+  "profiles": {
+    "3672": {
+      "player_name": "Zlatan Ibrahimovi\u0107",
+      "player_id": 3672,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "4320": {
+      "player_name": "Neymar da Silva Santos Junior",
+      "player_id": 4320,
+      "penalties_taken": 8,
+      "goals_scored": 6,
+      "profile_n": 6,
+      "conversion_rate": 0.75,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0366,
+        "Left": 0.5858,
+        "Right": 0.3775
+      },
+      "direction_ci": {
+        "Center": [
+          0.0367,
+          0.0,
+          0.1605
+        ],
+        "Left": [
+          0.5863,
+          0.3222,
+          0.8267
+        ],
+        "Right": [
+          0.377,
+          0.1399,
+          0.6429
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0105,
+        "Bottom-Left": 0.4258,
+        "Bottom-Right": 0.3182,
+        "Mid-Center": 0.0087,
+        "Mid-Left": 0.1443,
+        "Mid-Right": 0.0349,
+        "Top-Center": 0.0175,
+        "Top-Left": 0.0157,
+        "Top-Right": 0.0244
+      },
+      "height_probs": {
+        "High": 0.0576,
+        "Low": 0.7545,
+        "Mid": 0.1879
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.27,
+      "confidence": 0.6,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.6,
+          "Center": 0.064,
+          "Right": 0.337
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.411,
+          "Center": 0.179,
+          "Right": 0.411
+        },
+        "expected_save_rate": 0.072,
+        "naive_save_rate": 0.084,
+        "edge_over_naive": -0.012,
+        "exploitability": 0.175,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "mixed",
+        "dependence": 0.227,
+        "transitions": {
+          "Left": {
+            "Left": 0.646,
+            "Center": 0.009,
+            "Right": 0.344
+          },
+          "Center": {
+            "Left": 0.793,
+            "Center": 0.018,
+            "Right": 0.189
+          },
+          "Right": {
+            "Left": 0.396,
+            "Center": 0.259,
+            "Right": 0.344
+          }
+        },
+        "n_transitions": 7
+      }
+    },
+    "5201": {
+      "player_name": "Sergio Ramos Garc\u00eda",
+      "player_id": 5201,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "5207": {
+      "player_name": "Cristiano Ronaldo dos Santos Aveiro",
+      "player_id": 5207,
+      "penalties_taken": 12,
+      "goals_scored": 9,
+      "profile_n": 9,
+      "conversion_rate": 0.75,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0275,
+        "Left": 0.4394,
+        "Right": 0.5332
+      },
+      "direction_ci": {
+        "Center": [
+          0.0278,
+          0.0,
+          0.1197
+        ],
+        "Left": [
+          0.4391,
+          0.2186,
+          0.6727
+        ],
+        "Right": [
+          0.5332,
+          0.3009,
+          0.7613
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0079,
+        "Bottom-Left": 0.4027,
+        "Bottom-Right": 0.4053,
+        "Mid-Center": 0.0065,
+        "Mid-Left": 0.0249,
+        "Mid-Right": 0.1095,
+        "Top-Center": 0.0131,
+        "Top-Left": 0.0118,
+        "Top-Right": 0.0183
+      },
+      "height_probs": {
+        "High": 0.0432,
+        "Low": 0.8159,
+        "Mid": 0.1409
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.276,
+      "confidence": 0.9,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.353,
+          "Center": 0.067,
+          "Right": 0.58
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.411,
+          "Center": 0.179,
+          "Right": 0.411
+        },
+        "expected_save_rate": 0.07,
+        "naive_save_rate": 0.078,
+        "edge_over_naive": -0.007,
+        "exploitability": 0.151,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "alternator",
+        "dependence": 0.281,
+        "transitions": {
+          "Left": {
+            "Left": 0.088,
+            "Center": 0.205,
+            "Right": 0.707
+          },
+          "Center": {
+            "Left": 0.439,
+            "Center": 0.027,
+            "Right": 0.533
+          },
+          "Right": {
+            "Left": 0.555,
+            "Center": 0.003,
+            "Right": 0.442
+          }
+        },
+        "n_transitions": 11
+      }
+    },
+    "5217": {
+      "player_name": "Iago Aspas Juncal",
+      "player_id": 5217,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.3285,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.4476,
+        "Mid": 0.4228
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Mid-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "5246": {
+      "player_name": "Luis Alberto Su\u00e1rez D\u00edaz",
+      "player_id": 5246,
+      "penalties_taken": 9,
+      "goals_scored": 7,
+      "profile_n": 7,
+      "conversion_rate": 0.778,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.133,
+        "Left": 0.4272,
+        "Right": 0.4398
+      },
+      "direction_ci": {
+        "Center": [
+          0.1319,
+          0.0151,
+          0.3304
+        ],
+        "Left": [
+          0.4282,
+          0.1893,
+          0.6852
+        ],
+        "Right": [
+          0.4399,
+          0.198,
+          0.6956
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0094,
+        "Bottom-Left": 0.2832,
+        "Bottom-Right": 0.1864,
+        "Mid-Center": 0.0079,
+        "Mid-Left": 0.1298,
+        "Mid-Right": 0.2314,
+        "Top-Center": 0.1157,
+        "Top-Left": 0.0141,
+        "Top-Right": 0.022
+      },
+      "height_probs": {
+        "High": 0.1518,
+        "Low": 0.4791,
+        "Mid": 0.3691
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.096,
+      "confidence": 0.7,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.439,
+          "Center": 0.067,
+          "Right": 0.494
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.415,
+          "Center": 0.169,
+          "Right": 0.415
+        },
+        "expected_save_rate": 0.056,
+        "naive_save_rate": 0.058,
+        "edge_over_naive": -0.001,
+        "exploitability": 0.036,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "alternator",
+        "dependence": 0.294,
+        "transitions": {
+          "Left": {
+            "Left": 0.357,
+            "Center": 0.283,
+            "Right": 0.36
+          },
+          "Center": {
+            "Left": 0.142,
+            "Center": 0.044,
+            "Right": 0.813
+          },
+          "Right": {
+            "Left": 0.607,
+            "Center": 0.283,
+            "Right": 0.11
+          }
+        },
+        "n_transitions": 8
+      }
+    },
+    "5472": {
+      "player_name": "Mario Mand\u017euki\u0107",
+      "player_id": 5472,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.3325,
+        "Left": 0.3181,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.3329,
+          0.0477,
+          0.7207
+        ],
+        "Left": [
+          0.3192,
+          0.037,
+          0.7109
+        ],
+        "Right": [
+          0.3479,
+          0.0484,
+          0.7421
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.2893,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.3796,
+        "Low": 0.4476,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Top-Center",
+      "predictability": 0.001,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.251,
+          "Center": 0.499,
+          "Right": 0.251
+        },
+        "recommended_dive": "Center",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.015,
+        "naive_save_rate": 0.006,
+        "edge_over_naive": 0.009,
+        "exploitability": 0.332,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "5487": {
+      "player_name": "Antoine Griezmann",
+      "player_id": 5487,
+      "penalties_taken": 4,
+      "goals_scored": 2,
+      "profile_n": 2,
+      "conversion_rate": 0.5,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.066,
+        "Left": 0.2545,
+        "Right": 0.6796
+      },
+      "direction_ci": {
+        "Center": [
+          0.0652,
+          0.0,
+          0.273
+        ],
+        "Left": [
+          0.2569,
+          0.0323,
+          0.6022
+        ],
+        "Right": [
+          0.6779,
+          0.3267,
+          0.9422
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0188,
+        "Bottom-Left": 0.1665,
+        "Bottom-Right": 0.5728,
+        "Mid-Center": 0.0157,
+        "Mid-Left": 0.0597,
+        "Mid-Right": 0.0628,
+        "Top-Center": 0.0314,
+        "Top-Left": 0.0283,
+        "Top-Right": 0.044
+      },
+      "height_probs": {
+        "High": 0.1037,
+        "Low": 0.7581,
+        "Mid": 0.1382
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.281,
+      "confidence": 0.2,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.237,
+          "Center": 0.089,
+          "Right": 0.674
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.388,
+          "Center": 0.224,
+          "Right": 0.388
+        },
+        "expected_save_rate": 0.17,
+        "naive_save_rate": 0.21,
+        "edge_over_naive": -0.039,
+        "exploitability": 0.291,
+        "commit_timing": "early"
+      },
+      "sequence": {
+        "pattern": "alternator",
+        "dependence": 0.103,
+        "transitions": {
+          "Left": {
+            "Left": 0.127,
+            "Center": 0.033,
+            "Right": 0.84
+          },
+          "Center": {
+            "Left": 0.254,
+            "Center": 0.066,
+            "Right": 0.68
+          },
+          "Right": {
+            "Left": 0.418,
+            "Center": 0.022,
+            "Right": 0.56
+          }
+        },
+        "n_transitions": 3
+      }
+    },
+    "5503": {
+      "player_name": "Lionel Andr\u00e9s Messi Cuccittini",
+      "player_id": 5503,
+      "penalties_taken": 73,
+      "goals_scored": 60,
+      "profile_n": 60,
+      "conversion_rate": 0.822,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.1005,
+        "Left": 0.3059,
+        "Right": 0.5936
+      },
+      "direction_ci": {
+        "Center": [
+          0.1014,
+          0.0469,
+          0.1678
+        ],
+        "Left": [
+          0.3058,
+          0.2162,
+          0.4034
+        ],
+        "Right": [
+          0.5928,
+          0.4915,
+          0.6908
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0332,
+        "Bottom-Left": 0.1878,
+        "Bottom-Right": 0.2836,
+        "Mid-Center": 0.0171,
+        "Mid-Left": 0.0841,
+        "Mid-Right": 0.1478,
+        "Top-Center": 0.0501,
+        "Top-Left": 0.034,
+        "Top-Right": 0.1622
+      },
+      "height_probs": {
+        "High": 0.2463,
+        "Low": 0.5046,
+        "Mid": 0.2491
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.178,
+      "confidence": 1.0,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.359,
+          "Center": 0.029,
+          "Right": 0.612
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.425,
+          "Center": 0.149,
+          "Right": 0.425
+        },
+        "expected_save_rate": 0.044,
+        "naive_save_rate": 0.052,
+        "edge_over_naive": -0.008,
+        "exploitability": 0.168,
+        "commit_timing": "early"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.051,
+        "transitions": {
+          "Left": {
+            "Left": 0.471,
+            "Center": 0.046,
+            "Right": 0.483
+          },
+          "Center": {
+            "Left": 0.145,
+            "Center": 0.233,
+            "Right": 0.622
+          },
+          "Right": {
+            "Left": 0.293,
+            "Center": 0.121,
+            "Right": 0.586
+          }
+        },
+        "n_transitions": 72
+      }
+    },
+    "5504": {
+      "player_name": "\u00c9ver Maximiliano David Banega",
+      "player_id": 5504,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "5506": {
+      "player_name": "Javier Alejandro Mascherano",
+      "player_id": 5506,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.3325,
+        "Left": 0.3181,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.3329,
+          0.0477,
+          0.7207
+        ],
+        "Left": [
+          0.3192,
+          0.037,
+          0.7109
+        ],
+        "Right": [
+          0.3479,
+          0.0484,
+          0.7421
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.2893,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.3796,
+        "Low": 0.4476,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Top-Center",
+      "predictability": 0.001,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.251,
+          "Center": 0.499,
+          "Right": 0.251
+        },
+        "recommended_dive": "Center",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.015,
+        "naive_save_rate": 0.006,
+        "edge_over_naive": 0.009,
+        "exploitability": 0.332,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "6038": {
+      "player_name": "John Guidetti",
+      "player_id": 6038,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.3246,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.4476,
+        "Mid": 0.4228
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Mid-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "6381": {
+      "player_name": "Sa\u00fal \u00d1\u00edguez Esclapez",
+      "player_id": 6381,
+      "penalties_taken": 2,
+      "goals_scored": 2,
+      "profile_n": 2,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.066,
+        "Left": 0.2545,
+        "Right": 0.6796
+      },
+      "direction_ci": {
+        "Center": [
+          0.0652,
+          0.0,
+          0.273
+        ],
+        "Left": [
+          0.2569,
+          0.0323,
+          0.6022
+        ],
+        "Right": [
+          0.6779,
+          0.3267,
+          0.9422
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0188,
+        "Bottom-Left": 0.1665,
+        "Bottom-Right": 0.5728,
+        "Mid-Center": 0.0157,
+        "Mid-Left": 0.0597,
+        "Mid-Right": 0.0628,
+        "Top-Center": 0.0314,
+        "Top-Left": 0.0283,
+        "Top-Right": 0.044
+      },
+      "height_probs": {
+        "High": 0.1037,
+        "Low": 0.7581,
+        "Mid": 0.1382
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.281,
+      "confidence": 0.2,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.316,
+          "Center": 0.368,
+          "Right": 0.316
+        },
+        "recommended_dive": "Center",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": -0.0,
+        "exploitability": 0.246,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.254,
+            "Center": 0.066,
+            "Right": 0.68
+          },
+          "Center": {
+            "Left": 0.254,
+            "Center": 0.066,
+            "Right": 0.68
+          },
+          "Right": {
+            "Left": 0.254,
+            "Center": 0.066,
+            "Right": 0.68
+          }
+        },
+        "n_transitions": 1
+      }
+    },
+    "6394": {
+      "player_name": "Aritz Aduriz Zubeldia",
+      "player_id": 6394,
+      "penalties_taken": 5,
+      "goals_scored": 3,
+      "profile_n": 3,
+      "conversion_rate": 0.6,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.2216,
+        "Left": 0.3787,
+        "Right": 0.3997
+      },
+      "direction_ci": {
+        "Center": [
+          0.2229,
+          0.0271,
+          0.5233
+        ],
+        "Left": [
+          0.3806,
+          0.1065,
+          0.6933
+        ],
+        "Right": [
+          0.3965,
+          0.1137,
+          0.7173
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0157,
+        "Bottom-Left": 0.3054,
+        "Bottom-Right": 0.144,
+        "Mid-Center": 0.0131,
+        "Mid-Left": 0.0497,
+        "Mid-Right": 0.219,
+        "Top-Center": 0.1928,
+        "Top-Left": 0.0236,
+        "Top-Right": 0.0366
+      },
+      "height_probs": {
+        "High": 0.2531,
+        "Low": 0.4651,
+        "Mid": 0.2818
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.028,
+      "confidence": 0.3,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.421,
+          "Center": 0.158,
+          "Right": 0.421
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.394,
+          "Center": 0.211,
+          "Right": 0.394
+        },
+        "expected_save_rate": 0.102,
+        "naive_save_rate": 0.103,
+        "edge_over_naive": -0.001,
+        "exploitability": 0.016,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "alternator",
+        "dependence": 0.253,
+        "transitions": {
+          "Left": {
+            "Left": 0.46,
+            "Center": 0.074,
+            "Right": 0.467
+          },
+          "Center": {
+            "Left": 0.689,
+            "Center": 0.111,
+            "Right": 0.2
+          },
+          "Right": {
+            "Left": 0.189,
+            "Center": 0.611,
+            "Right": 0.2
+          }
+        },
+        "n_transitions": 4
+      }
+    },
+    "6401": {
+      "player_name": "Kevin Gameiro",
+      "player_id": 6401,
+      "penalties_taken": 5,
+      "goals_scored": 4,
+      "profile_n": 4,
+      "conversion_rate": 0.8,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0471,
+        "Left": 0.7532,
+        "Right": 0.1997
+      },
+      "direction_ci": {
+        "Center": [
+          0.0463,
+          0.0,
+          0.2009
+        ],
+        "Left": [
+          0.7546,
+          0.4706,
+          0.954
+        ],
+        "Right": [
+          0.1991,
+          0.0248,
+          0.4638
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0135,
+        "Bottom-Left": 0.5475,
+        "Bottom-Right": 0.1234,
+        "Mid-Center": 0.0112,
+        "Mid-Left": 0.1855,
+        "Mid-Right": 0.0449,
+        "Top-Center": 0.0224,
+        "Top-Left": 0.0202,
+        "Top-Right": 0.0314
+      },
+      "height_probs": {
+        "High": 0.074,
+        "Low": 0.6844,
+        "Mid": 0.2416
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.382,
+      "confidence": 0.4,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.736,
+          "Center": 0.028,
+          "Right": 0.236
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.42,
+          "Center": 0.16,
+          "Right": 0.42
+        },
+        "expected_save_rate": 0.065,
+        "naive_save_rate": 0.079,
+        "edge_over_naive": -0.014,
+        "exploitability": 0.333,
+        "commit_timing": "early"
+      },
+      "sequence": {
+        "pattern": "mixed",
+        "dependence": 0.204,
+        "transitions": {
+          "Left": {
+            "Left": 0.951,
+            "Center": 0.009,
+            "Right": 0.04
+          },
+          "Center": {
+            "Left": 0.753,
+            "Center": 0.047,
+            "Right": 0.2
+          },
+          "Right": {
+            "Left": 0.753,
+            "Center": 0.047,
+            "Right": 0.2
+          }
+        },
+        "n_transitions": 4
+      }
+    },
+    "6402": {
+      "player_name": "Francisco Alc\u00e1cer Garc\u00eda",
+      "player_id": 6402,
+      "penalties_taken": 3,
+      "goals_scored": 2,
+      "profile_n": 2,
+      "conversion_rate": 0.667,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.066,
+        "Left": 0.6545,
+        "Right": 0.2796
+      },
+      "direction_ci": {
+        "Center": [
+          0.065,
+          0.0,
+          0.2761
+        ],
+        "Left": [
+          0.6553,
+          0.3049,
+          0.9297
+        ],
+        "Right": [
+          0.2797,
+          0.0367,
+          0.6215
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0188,
+        "Bottom-Left": 0.3665,
+        "Bottom-Right": 0.1728,
+        "Mid-Center": 0.0157,
+        "Mid-Left": 0.2597,
+        "Mid-Right": 0.0628,
+        "Top-Center": 0.0314,
+        "Top-Left": 0.0283,
+        "Top-Right": 0.044
+      },
+      "height_probs": {
+        "High": 0.1037,
+        "Low": 0.5581,
+        "Mid": 0.3382
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.26,
+      "confidence": 0.2,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.654,
+          "Center": 0.074,
+          "Right": 0.272
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.4,
+          "Center": 0.2,
+          "Right": 0.4
+        },
+        "expected_save_rate": 0.105,
+        "naive_save_rate": 0.129,
+        "edge_over_naive": -0.023,
+        "exploitability": 0.254,
+        "commit_timing": "early"
+      },
+      "sequence": {
+        "pattern": "mixed",
+        "dependence": 0.201,
+        "transitions": {
+          "Left": {
+            "Left": 0.885,
+            "Center": 0.022,
+            "Right": 0.093
+          },
+          "Center": {
+            "Left": 0.654,
+            "Center": 0.066,
+            "Right": 0.28
+          },
+          "Right": {
+            "Left": 0.654,
+            "Center": 0.066,
+            "Right": 0.28
+          }
+        },
+        "n_transitions": 2
+      }
+    },
+    "6566": {
+      "player_name": "Borja Gonz\u00e1lez Tom\u00e1s",
+      "player_id": 6566,
+      "penalties_taken": 3,
+      "goals_scored": 3,
+      "profile_n": 3,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.2216,
+        "Left": 0.5454,
+        "Right": 0.233
+      },
+      "direction_ci": {
+        "Center": [
+          0.228,
+          0.0276,
+          0.5425
+        ],
+        "Left": [
+          0.5366,
+          0.2143,
+          0.8378
+        ],
+        "Right": [
+          0.2354,
+          0.0329,
+          0.534
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0157,
+        "Bottom-Left": 0.3054,
+        "Bottom-Right": 0.144,
+        "Mid-Center": 0.1798,
+        "Mid-Left": 0.0497,
+        "Mid-Right": 0.0524,
+        "Top-Center": 0.0262,
+        "Top-Left": 0.1902,
+        "Top-Right": 0.0366
+      },
+      "height_probs": {
+        "High": 0.2531,
+        "Low": 0.4651,
+        "Mid": 0.2818
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.086,
+      "confidence": 0.3,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.3,
+          "Center": 0.401,
+          "Right": 0.3
+        },
+        "recommended_dive": "Center",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.01,
+        "naive_save_rate": 0.006,
+        "edge_over_naive": 0.004,
+        "exploitability": 0.267,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "mixed",
+        "dependence": 0.16,
+        "transitions": {
+          "Left": {
+            "Left": 0.773,
+            "Center": 0.111,
+            "Right": 0.116
+          },
+          "Center": {
+            "Left": 0.773,
+            "Center": 0.111,
+            "Right": 0.116
+          },
+          "Right": {
+            "Left": 0.545,
+            "Center": 0.222,
+            "Right": 0.233
+          }
+        },
+        "n_transitions": 2
+      }
+    },
+    "6595": {
+      "player_name": "Daniel Parejo Mu\u00f1oz",
+      "player_id": 6595,
+      "penalties_taken": 5,
+      "goals_scored": 4,
+      "profile_n": 4,
+      "conversion_rate": 0.8,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.19,
+        "Left": 0.3246,
+        "Right": 0.4854
+      },
+      "direction_ci": {
+        "Center": [
+          0.1908,
+          0.023,
+          0.4571
+        ],
+        "Left": [
+          0.3258,
+          0.0865,
+          0.6239
+        ],
+        "Right": [
+          0.4834,
+          0.1955,
+          0.7767
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0135,
+        "Bottom-Left": 0.1189,
+        "Bottom-Right": 0.4091,
+        "Mid-Center": 0.1541,
+        "Mid-Left": 0.1855,
+        "Mid-Right": 0.0449,
+        "Top-Center": 0.0224,
+        "Top-Left": 0.0202,
+        "Top-Right": 0.0314
+      },
+      "height_probs": {
+        "High": 0.074,
+        "Low": 0.5415,
+        "Mid": 0.3844
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.061,
+      "confidence": 0.4,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.404,
+          "Center": 0.048,
+          "Right": 0.548
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.42,
+          "Center": 0.16,
+          "Right": 0.42
+        },
+        "expected_save_rate": 0.053,
+        "naive_save_rate": 0.059,
+        "edge_over_naive": -0.006,
+        "exploitability": 0.095,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "alternator",
+        "dependence": 0.246,
+        "transitions": {
+          "Left": {
+            "Left": 0.162,
+            "Center": 0.595,
+            "Right": 0.243
+          },
+          "Center": {
+            "Left": 0.162,
+            "Center": 0.095,
+            "Right": 0.743
+          },
+          "Right": {
+            "Left": 0.442,
+            "Center": 0.063,
+            "Right": 0.495
+          }
+        },
+        "n_transitions": 4
+      }
+    },
+    "6630": {
+      "player_name": "Jorge Molina Vidal",
+      "player_id": 6630,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.3246,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.4476,
+        "Mid": 0.4228
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Mid-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "6673": {
+      "player_name": "Sergio Canales Madrazo",
+      "player_id": 6673,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "6685": {
+      "player_name": "Mikel Oyarzabal Ugarte",
+      "player_id": 6685,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.3325,
+        "Left": 0.3181,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.3329,
+          0.0477,
+          0.7207
+        ],
+        "Left": [
+          0.3192,
+          0.037,
+          0.7109
+        ],
+        "Right": [
+          0.3479,
+          0.0484,
+          0.7421
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.2736,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Center",
+      "predictability": 0.001,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.251,
+          "Center": 0.499,
+          "Right": 0.251
+        },
+        "recommended_dive": "Center",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.018,
+        "naive_save_rate": 0.007,
+        "edge_over_naive": 0.011,
+        "exploitability": 0.332,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "6690": {
+      "player_name": "Xabier Prieto Argarate",
+      "player_id": 6690,
+      "penalties_taken": 2,
+      "goals_scored": 2,
+      "profile_n": 2,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.466,
+        "Left": 0.2545,
+        "Right": 0.2796
+      },
+      "direction_ci": {
+        "Center": [
+          0.4661,
+          0.1421,
+          0.815
+        ],
+        "Left": [
+          0.2556,
+          0.0284,
+          0.6031
+        ],
+        "Right": [
+          0.2783,
+          0.0353,
+          0.6256
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0188,
+        "Bottom-Left": 0.1665,
+        "Bottom-Right": 0.1728,
+        "Mid-Center": 0.2157,
+        "Mid-Left": 0.0597,
+        "Mid-Right": 0.0628,
+        "Top-Center": 0.2314,
+        "Top-Left": 0.0283,
+        "Top-Right": 0.044
+      },
+      "height_probs": {
+        "High": 0.3037,
+        "Low": 0.3581,
+        "Mid": 0.3382
+      },
+      "most_likely_direction": "Center",
+      "most_likely_zone": "Top-Center",
+      "predictability": 0.035,
+      "confidence": 0.2,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.151,
+          "Center": 0.699,
+          "Right": 0.151
+        },
+        "recommended_dive": "Center",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.027,
+        "naive_save_rate": 0.036,
+        "edge_over_naive": -0.009,
+        "exploitability": 0.466,
+        "commit_timing": "early"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.254,
+            "Center": 0.466,
+            "Right": 0.28
+          },
+          "Center": {
+            "Left": 0.254,
+            "Center": 0.466,
+            "Right": 0.28
+          },
+          "Right": {
+            "Left": 0.254,
+            "Center": 0.466,
+            "Right": 0.28
+          }
+        },
+        "n_transitions": 1
+      }
+    },
+    "6707": {
+      "player_name": "Charles D\u00edas Barbosa de Oliveira",
+      "player_id": 6707,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "6724": {
+      "player_name": "Manuel Agudo Dur\u00e1n",
+      "player_id": 6724,
+      "penalties_taken": 2,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 0.5,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.577,
+          "Center": 0.115,
+          "Right": 0.308
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.388,
+          "Center": 0.224,
+          "Right": 0.388
+        },
+        "expected_save_rate": 0.149,
+        "naive_save_rate": 0.178,
+        "edge_over_naive": -0.029,
+        "exploitability": 0.18,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 1
+      }
+    },
+    "6732": {
+      "player_name": "Lucas P\u00e9rez Mart\u00ednez",
+      "player_id": 6732,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.466,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "6760": {
+      "player_name": "Enes \u00dcnal",
+      "player_id": 6760,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "6766": {
+      "player_name": "Gerard Moreno Balaguero",
+      "player_id": 6766,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.466,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "6832": {
+      "player_name": "Rub\u00e9n Castro Mart\u00edn",
+      "player_id": 6832,
+      "penalties_taken": 4,
+      "goals_scored": 3,
+      "profile_n": 3,
+      "conversion_rate": 0.75,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.2216,
+        "Left": 0.3787,
+        "Right": 0.3997
+      },
+      "direction_ci": {
+        "Center": [
+          0.2229,
+          0.0271,
+          0.5233
+        ],
+        "Left": [
+          0.3806,
+          0.1065,
+          0.6933
+        ],
+        "Right": [
+          0.3965,
+          0.1137,
+          0.7173
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0157,
+        "Bottom-Left": 0.3054,
+        "Bottom-Right": 0.3106,
+        "Mid-Center": 0.1798,
+        "Mid-Left": 0.0497,
+        "Mid-Right": 0.0524,
+        "Top-Center": 0.0262,
+        "Top-Left": 0.0236,
+        "Top-Right": 0.0366
+      },
+      "height_probs": {
+        "High": 0.0864,
+        "Low": 0.6318,
+        "Mid": 0.2818
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.028,
+      "confidence": 0.3,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.428,
+          "Center": 0.145,
+          "Right": 0.428
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.411,
+          "Center": 0.179,
+          "Right": 0.411
+        },
+        "expected_save_rate": 0.067,
+        "naive_save_rate": 0.067,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.043,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "alternator",
+        "dependence": 0.348,
+        "transitions": {
+          "Left": {
+            "Left": 0.189,
+            "Center": 0.611,
+            "Right": 0.2
+          },
+          "Center": {
+            "Left": 0.189,
+            "Center": 0.111,
+            "Right": 0.7
+          },
+          "Right": {
+            "Left": 0.689,
+            "Center": 0.111,
+            "Right": 0.2
+          }
+        },
+        "n_transitions": 3
+      }
+    },
+    "6879": {
+      "player_name": "Alberto Bueno Calvo",
+      "player_id": 6879,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.3325,
+        "Left": 0.3181,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.3329,
+          0.0477,
+          0.7207
+        ],
+        "Left": [
+          0.3192,
+          0.037,
+          0.7109
+        ],
+        "Right": [
+          0.3479,
+          0.0484,
+          0.7421
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.2893,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.3796,
+        "Low": 0.4476,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Top-Center",
+      "predictability": 0.001,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.251,
+          "Center": 0.499,
+          "Right": 0.251
+        },
+        "recommended_dive": "Center",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.015,
+        "naive_save_rate": 0.006,
+        "edge_over_naive": 0.009,
+        "exploitability": 0.332,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "6880": {
+      "player_name": "Arnaldo Antonio Sanabria Ayala",
+      "player_id": 6880,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.466,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "6930": {
+      "player_name": "Jonathan Calleri",
+      "player_id": 6930,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.305
+      },
+      "height_probs": {
+        "High": 0.3796,
+        "Low": 0.4476,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Top-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.004,
+        "naive_save_rate": 0.004,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "7105": {
+      "player_name": "Fabi\u00e1n Ariel Orellana Valenzuela",
+      "player_id": 7105,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.466,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "7141": {
+      "player_name": "Giuseppe Rossi",
+      "player_id": 7141,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "8419": {
+      "player_name": "Duje \u010cop",
+      "player_id": 8419,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.305
+      },
+      "height_probs": {
+        "High": 0.3796,
+        "Low": 0.4476,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Top-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.004,
+        "naive_save_rate": 0.004,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "8523": {
+      "player_name": "Yevhen Konoplyanka",
+      "player_id": 8523,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.3246,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.4476,
+        "Mid": 0.4228
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Mid-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "10325": {
+      "player_name": "Lu\u00eds Miguel Afonso Fernandes",
+      "player_id": 10325,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.3285,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.4476,
+        "Mid": 0.4228
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Mid-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "10755": {
+      "player_name": "Jonathan Viera Ramos",
+      "player_id": 10755,
+      "penalties_taken": 5,
+      "goals_scored": 4,
+      "profile_n": 4,
+      "conversion_rate": 0.8,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0471,
+        "Left": 0.3246,
+        "Right": 0.6283
+      },
+      "direction_ci": {
+        "Center": [
+          0.0469,
+          0.0,
+          0.1977
+        ],
+        "Left": [
+          0.3258,
+          0.0851,
+          0.6279
+        ],
+        "Right": [
+          0.6273,
+          0.3279,
+          0.8852
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0135,
+        "Bottom-Left": 0.2618,
+        "Bottom-Right": 0.4091,
+        "Mid-Center": 0.0112,
+        "Mid-Left": 0.0426,
+        "Mid-Right": 0.0449,
+        "Top-Center": 0.0224,
+        "Top-Left": 0.0202,
+        "Top-Right": 0.1743
+      },
+      "height_probs": {
+        "High": 0.2169,
+        "Low": 0.6844,
+        "Mid": 0.0987
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.271,
+      "confidence": 0.4,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.325,
+          "Center": 0.039,
+          "Right": 0.637
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.42,
+          "Center": 0.16,
+          "Right": 0.42
+        },
+        "expected_save_rate": 0.052,
+        "naive_save_rate": 0.062,
+        "edge_over_naive": -0.01,
+        "exploitability": 0.208,
+        "commit_timing": "early"
+      },
+      "sequence": {
+        "pattern": "alternator",
+        "dependence": 0.139,
+        "transitions": {
+          "Left": {
+            "Left": 0.108,
+            "Center": 0.016,
+            "Right": 0.876
+          },
+          "Center": {
+            "Left": 0.325,
+            "Center": 0.047,
+            "Right": 0.628
+          },
+          "Right": {
+            "Left": 0.442,
+            "Center": 0.016,
+            "Right": 0.543
+          }
+        },
+        "n_transitions": 4
+      }
+    },
+    "11550": {
+      "player_name": "Jaime Mata Arnaiz",
+      "player_id": 11550,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "19298": {
+      "player_name": "Samuel Eto''o Fils",
+      "player_id": 19298,
+      "penalties_taken": 5,
+      "goals_scored": 3,
+      "profile_n": 3,
+      "conversion_rate": 0.6,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.055,
+        "Left": 0.712,
+        "Right": 0.233
+      },
+      "direction_ci": {
+        "Center": [
+          0.054,
+          0.0,
+          0.2331
+        ],
+        "Left": [
+          0.7139,
+          0.3993,
+          0.9448
+        ],
+        "Right": [
+          0.2321,
+          0.0293,
+          0.5332
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0157,
+        "Bottom-Left": 0.3054,
+        "Bottom-Right": 0.144,
+        "Mid-Center": 0.0131,
+        "Mid-Left": 0.3831,
+        "Mid-Right": 0.0524,
+        "Top-Center": 0.0262,
+        "Top-Left": 0.0236,
+        "Top-Right": 0.0366
+      },
+      "height_probs": {
+        "High": 0.0864,
+        "Low": 0.4651,
+        "Mid": 0.4485
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Mid-Left",
+      "predictability": 0.326,
+      "confidence": 0.3,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.702,
+          "Center": 0.072,
+          "Right": 0.225
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.394,
+          "Center": 0.211,
+          "Right": 0.394
+        },
+        "expected_save_rate": 0.14,
+        "naive_save_rate": 0.172,
+        "edge_over_naive": -0.031,
+        "exploitability": 0.318,
+        "commit_timing": "early"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.057,
+        "transitions": {
+          "Left": {
+            "Left": 0.678,
+            "Center": 0.014,
+            "Right": 0.308
+          },
+          "Center": {
+            "Left": 0.712,
+            "Center": 0.055,
+            "Right": 0.233
+          },
+          "Right": {
+            "Left": 0.856,
+            "Center": 0.027,
+            "Right": 0.116
+          }
+        },
+        "n_transitions": 4
+      }
+    },
+    "19729": {
+      "player_name": "Ruud van Nistelrooy",
+      "player_id": 19729,
+      "penalties_taken": 2,
+      "goals_scored": 2,
+      "profile_n": 2,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.066,
+        "Left": 0.2545,
+        "Right": 0.6796
+      },
+      "direction_ci": {
+        "Center": [
+          0.0652,
+          0.0,
+          0.273
+        ],
+        "Left": [
+          0.2569,
+          0.0323,
+          0.6022
+        ],
+        "Right": [
+          0.6779,
+          0.3267,
+          0.9422
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0188,
+        "Bottom-Left": 0.1665,
+        "Bottom-Right": 0.5728,
+        "Mid-Center": 0.0157,
+        "Mid-Left": 0.0597,
+        "Mid-Right": 0.0628,
+        "Top-Center": 0.0314,
+        "Top-Left": 0.0283,
+        "Top-Right": 0.044
+      },
+      "height_probs": {
+        "High": 0.1037,
+        "Low": 0.7581,
+        "Mid": 0.1382
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.281,
+      "confidence": 0.2,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.316,
+          "Center": 0.368,
+          "Right": 0.316
+        },
+        "recommended_dive": "Center",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": -0.0,
+        "exploitability": 0.246,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.254,
+            "Center": 0.066,
+            "Right": 0.68
+          },
+          "Center": {
+            "Left": 0.254,
+            "Center": 0.066,
+            "Right": 0.68
+          },
+          "Right": {
+            "Left": 0.254,
+            "Center": 0.066,
+            "Right": 0.68
+          }
+        },
+        "n_transitions": 1
+      }
+    },
+    "20135": {
+      "player_name": "Marcos Antonio Senna da Silva",
+      "player_id": 20135,
+      "penalties_taken": 2,
+      "goals_scored": 2,
+      "profile_n": 2,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.266,
+        "Left": 0.2545,
+        "Right": 0.4796
+      },
+      "direction_ci": {
+        "Center": [
+          0.2708,
+          0.0343,
+          0.6129
+        ],
+        "Left": [
+          0.256,
+          0.0299,
+          0.5958
+        ],
+        "Right": [
+          0.4733,
+          0.1474,
+          0.8106
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.2188,
+        "Bottom-Left": 0.1665,
+        "Bottom-Right": 0.1728,
+        "Mid-Center": 0.0157,
+        "Mid-Left": 0.0597,
+        "Mid-Right": 0.2628,
+        "Top-Center": 0.0314,
+        "Top-Left": 0.0283,
+        "Top-Right": 0.044
+      },
+      "height_probs": {
+        "High": 0.1037,
+        "Low": 0.5581,
+        "Mid": 0.3382
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Mid-Right",
+      "predictability": 0.042,
+      "confidence": 0.2,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.301,
+          "Center": 0.399,
+          "Right": 0.301
+        },
+        "recommended_dive": "Center",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.013,
+        "naive_save_rate": 0.007,
+        "edge_over_naive": 0.006,
+        "exploitability": 0.266,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.254,
+            "Center": 0.266,
+            "Right": 0.48
+          },
+          "Center": {
+            "Left": 0.254,
+            "Center": 0.266,
+            "Right": 0.48
+          },
+          "Right": {
+            "Left": 0.254,
+            "Center": 0.266,
+            "Right": 0.48
+          }
+        },
+        "n_transitions": 1
+      }
+    },
+    "22819": {
+      "player_name": "Bruno Soriano Llido",
+      "player_id": 22819,
+      "penalties_taken": 3,
+      "goals_scored": 3,
+      "profile_n": 3,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.055,
+        "Left": 0.5454,
+        "Right": 0.3997
+      },
+      "direction_ci": {
+        "Center": [
+          0.0549,
+          0.0,
+          0.2341
+        ],
+        "Left": [
+          0.5449,
+          0.224,
+          0.8393
+        ],
+        "Right": [
+          0.4001,
+          0.1161,
+          0.7285
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0157,
+        "Bottom-Left": 0.4721,
+        "Bottom-Right": 0.3106,
+        "Mid-Center": 0.0131,
+        "Mid-Left": 0.0497,
+        "Mid-Right": 0.0524,
+        "Top-Center": 0.0262,
+        "Top-Left": 0.0236,
+        "Top-Right": 0.0366
+      },
+      "height_probs": {
+        "High": 0.0864,
+        "Low": 0.7984,
+        "Mid": 0.1152
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.22,
+      "confidence": 0.3,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.425,
+          "Center": 0.151,
+          "Right": 0.425
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.004,
+        "naive_save_rate": 0.004,
+        "edge_over_naive": -0.0,
+        "exploitability": 0.1,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.033,
+        "transitions": {
+          "Left": {
+            "Left": 0.515,
+            "Center": 0.018,
+            "Right": 0.467
+          },
+          "Center": {
+            "Left": 0.545,
+            "Center": 0.055,
+            "Right": 0.4
+          },
+          "Right": {
+            "Left": 0.545,
+            "Center": 0.055,
+            "Right": 0.4
+          }
+        },
+        "n_transitions": 2
+      }
+    },
+    "23791": {
+      "player_name": "V\u00edctor Casades\u00fas Casta\u00f1o",
+      "player_id": 23791,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.3325,
+        "Left": 0.3181,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.3329,
+          0.0477,
+          0.7207
+        ],
+        "Left": [
+          0.3192,
+          0.037,
+          0.7109
+        ],
+        "Right": [
+          0.3479,
+          0.0484,
+          0.7421
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.2736,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Center",
+      "predictability": 0.001,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.251,
+          "Center": 0.499,
+          "Right": 0.251
+        },
+        "recommended_dive": "Center",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.018,
+        "naive_save_rate": 0.007,
+        "edge_over_naive": 0.011,
+        "exploitability": 0.332,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "23812": {
+      "player_name": "Rafael Mir Vicente",
+      "player_id": 23812,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.466,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "23967": {
+      "player_name": "Alejandro Fern\u00e1ndez Iglesias",
+      "player_id": 23967,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "24035": {
+      "player_name": "\u00c1lvaro V\u00e1zquez Garc\u00eda",
+      "player_id": 24035,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.3325,
+        "Left": 0.3181,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.3329,
+          0.0477,
+          0.7207
+        ],
+        "Left": [
+          0.3192,
+          0.037,
+          0.7109
+        ],
+        "Right": [
+          0.3479,
+          0.0484,
+          0.7421
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.2736,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Center",
+      "predictability": 0.001,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.251,
+          "Center": 0.499,
+          "Right": 0.251
+        },
+        "recommended_dive": "Center",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.018,
+        "naive_save_rate": 0.007,
+        "edge_over_naive": 0.011,
+        "exploitability": 0.332,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.332,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "24070": {
+      "player_name": "Sa\u00fal Berj\u00f3n P\u00e9rez",
+      "player_id": 24070,
+      "penalties_taken": 4,
+      "goals_scored": 3,
+      "profile_n": 3,
+      "conversion_rate": 0.75,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.2216,
+        "Left": 0.5454,
+        "Right": 0.233
+      },
+      "direction_ci": {
+        "Center": [
+          0.228,
+          0.0276,
+          0.5425
+        ],
+        "Left": [
+          0.5366,
+          0.2143,
+          0.8378
+        ],
+        "Right": [
+          0.2354,
+          0.0329,
+          0.534
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0157,
+        "Bottom-Left": 0.1387,
+        "Bottom-Right": 0.144,
+        "Mid-Center": 0.0131,
+        "Mid-Left": 0.2164,
+        "Mid-Right": 0.0524,
+        "Top-Center": 0.1928,
+        "Top-Left": 0.1902,
+        "Top-Right": 0.0366
+      },
+      "height_probs": {
+        "High": 0.4197,
+        "Low": 0.2984,
+        "Mid": 0.2818
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Mid-Left",
+      "predictability": 0.086,
+      "confidence": 0.3,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.601,
+          "Center": 0.063,
+          "Right": 0.335
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.411,
+          "Center": 0.179,
+          "Right": 0.411
+        },
+        "expected_save_rate": 0.059,
+        "naive_save_rate": 0.07,
+        "edge_over_naive": -0.011,
+        "exploitability": 0.178,
+        "commit_timing": "early"
+      },
+      "sequence": {
+        "pattern": "mixed",
+        "dependence": 0.251,
+        "transitions": {
+          "Left": {
+            "Left": 0.848,
+            "Center": 0.074,
+            "Right": 0.078
+          },
+          "Center": {
+            "Left": 0.773,
+            "Center": 0.111,
+            "Right": 0.116
+          },
+          "Right": {
+            "Left": 0.545,
+            "Center": 0.222,
+            "Right": 0.233
+          }
+        },
+        "n_transitions": 3
+      }
+    },
+    "24143": {
+      "player_name": "\u00c1lvaro Vadillo Cifuentes",
+      "player_id": 24143,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "24149": {
+      "player_name": "Jos\u00e9 Antonio Garc\u00eda Rabasco",
+      "player_id": 24149,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.2853,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.3796,
+        "Low": 0.4476,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Top-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.004,
+        "naive_save_rate": 0.004,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "24507": {
+      "player_name": "Manuel del Moral Fern\u00e1ndez",
+      "player_id": 24507,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.3246,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.4476,
+        "Mid": 0.4228
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Mid-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "25707": {
+      "player_name": "Francisco Manuel Rico Castro",
+      "player_id": 25707,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.3285,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.4476,
+        "Mid": 0.4228
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Mid-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "25879": {
+      "player_name": "Ronaldo de Assis Moreira",
+      "player_id": 25879,
+      "penalties_taken": 16,
+      "goals_scored": 13,
+      "profile_n": 13,
+      "conversion_rate": 0.812,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0206,
+        "Left": 0.4545,
+        "Right": 0.5249
+      },
+      "direction_ci": {
+        "Center": [
+          0.0209,
+          0.0,
+          0.0882
+        ],
+        "Left": [
+          0.4543,
+          0.258,
+          0.6584
+        ],
+        "Right": [
+          0.5248,
+          0.3232,
+          0.7268
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0059,
+        "Bottom-Left": 0.2395,
+        "Bottom-Right": 0.429,
+        "Mid-Center": 0.0049,
+        "Mid-Left": 0.0187,
+        "Mid-Right": 0.0821,
+        "Top-Center": 0.0098,
+        "Top-Left": 0.1963,
+        "Top-Right": 0.0137
+      },
+      "height_probs": {
+        "High": 0.2199,
+        "Low": 0.6744,
+        "Mid": 0.1057
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.293,
+      "confidence": 1.0,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.381,
+          "Center": 0.037,
+          "Right": 0.581
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.423,
+          "Center": 0.154,
+          "Right": 0.423
+        },
+        "expected_save_rate": 0.045,
+        "naive_save_rate": 0.048,
+        "edge_over_naive": -0.003,
+        "exploitability": 0.133,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "repeater",
+        "dependence": 0.204,
+        "transitions": {
+          "Left": {
+            "Left": 0.606,
+            "Center": 0.002,
+            "Right": 0.392
+          },
+          "Center": {
+            "Left": 0.727,
+            "Center": 0.01,
+            "Right": 0.262
+          },
+          "Right": {
+            "Left": 0.208,
+            "Center": 0.146,
+            "Right": 0.646
+          }
+        },
+        "n_transitions": 15
+      }
+    },
+    "26009": {
+      "player_name": "Roberto Soldado Rillo",
+      "player_id": 26009,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "26031": {
+      "player_name": "Andoni Iraola Sagarna",
+      "player_id": 26031,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.466,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "26074": {
+      "player_name": "Nikola \u017digi\u0107",
+      "player_id": 26074,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "26144": {
+      "player_name": "Francisco Javier Casquero Paredes",
+      "player_id": 26144,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.466,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "26181": {
+      "player_name": "Rahamat Riga Mustapha",
+      "player_id": 26181,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "26192": {
+      "player_name": "Mat\u00edas Ariel Fern\u00e1ndez Fern\u00e1ndez",
+      "player_id": 26192,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.2853,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.3796,
+        "Low": 0.4476,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Top-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.387,
+          "Center": 0.226,
+          "Right": 0.387
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.004,
+        "naive_save_rate": 0.004,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.151,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "26199": {
+      "player_name": "Diego Forl\u00e1n Corazo",
+      "player_id": 26199,
+      "penalties_taken": 2,
+      "goals_scored": 2,
+      "profile_n": 2,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.066,
+        "Left": 0.4545,
+        "Right": 0.4796
+      },
+      "direction_ci": {
+        "Center": [
+          0.0651,
+          0.0,
+          0.2781
+        ],
+        "Left": [
+          0.4563,
+          0.1351,
+          0.7937
+        ],
+        "Right": [
+          0.4786,
+          0.1502,
+          0.8197
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0188,
+        "Bottom-Left": 0.1665,
+        "Bottom-Right": 0.3728,
+        "Mid-Center": 0.0157,
+        "Mid-Left": 0.2597,
+        "Mid-Right": 0.0628,
+        "Top-Center": 0.0314,
+        "Top-Left": 0.0283,
+        "Top-Right": 0.044
+      },
+      "height_probs": {
+        "High": 0.1037,
+        "Low": 0.5581,
+        "Mid": 0.3382
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.19,
+      "confidence": 0.2,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.451,
+          "Center": 0.099,
+          "Right": 0.451
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.004,
+        "naive_save_rate": 0.004,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.066,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.454,
+            "Center": 0.066,
+            "Right": 0.48
+          },
+          "Center": {
+            "Left": 0.454,
+            "Center": 0.066,
+            "Right": 0.48
+          },
+          "Right": {
+            "Left": 0.454,
+            "Center": 0.066,
+            "Right": 0.48
+          }
+        },
+        "n_transitions": 1
+      }
+    },
+    "26226": {
+      "player_name": "Jos\u00e9 Javier Barkero Saludes",
+      "player_id": 26226,
+      "penalties_taken": 2,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 0.5,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.5681,
+        "Right": 0.3495
+      },
+      "direction_ci": {
+        "Center": [
+          0.0812,
+          0.0,
+          0.3372
+        ],
+        "Left": [
+          0.5701,
+          0.1957,
+          0.9049
+        ],
+        "Right": [
+          0.3487,
+          0.0525,
+          0.7301
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.4581,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.186,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.577,
+          "Center": 0.115,
+          "Right": 0.308
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.388,
+          "Center": 0.224,
+          "Right": 0.388
+        },
+        "expected_save_rate": 0.149,
+        "naive_save_rate": 0.178,
+        "edge_over_naive": -0.029,
+        "exploitability": 0.18,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Center": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          },
+          "Right": {
+            "Left": 0.568,
+            "Center": 0.082,
+            "Right": 0.349
+          }
+        },
+        "n_transitions": 1
+      }
+    },
+    "26243": {
+      "player_name": "Iv\u00e1n Daniel Alonso Vallejo",
+      "player_id": 26243,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.216,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.305
+      },
+      "height_probs": {
+        "High": 0.3796,
+        "Low": 0.4476,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Top-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.004,
+        "naive_save_rate": 0.004,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "26399": {
+      "player_name": "Emilio Jos\u00e9 Viqueira Moure",
+      "player_id": 26399,
+      "penalties_taken": 1,
+      "goals_scored": 1,
+      "profile_n": 1,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.0825,
+        "Left": 0.3181,
+        "Right": 0.5995
+      },
+      "direction_ci": {
+        "Center": [
+          0.0811,
+          0.0,
+          0.3416
+        ],
+        "Left": [
+          0.3213,
+          0.0431,
+          0.7057
+        ],
+        "Right": [
+          0.5977,
+          0.2121,
+          0.9226
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0236,
+        "Bottom-Left": 0.2081,
+        "Bottom-Right": 0.466,
+        "Mid-Center": 0.0196,
+        "Mid-Left": 0.0746,
+        "Mid-Right": 0.0785,
+        "Top-Center": 0.0393,
+        "Top-Left": 0.0353,
+        "Top-Right": 0.055
+      },
+      "height_probs": {
+        "High": 0.1296,
+        "Low": 0.6976,
+        "Mid": 0.1728
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.202,
+      "confidence": 0.1,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.364,
+          "Center": 0.273,
+          "Right": 0.364
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.005,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.182,
+        "commit_timing": "late"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Center": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          },
+          "Right": {
+            "Left": 0.318,
+            "Center": 0.082,
+            "Right": 0.599
+          }
+        },
+        "n_transitions": 0
+      }
+    },
+    "26780": {
+      "player_name": "Guilherme Magdalena Siqueira",
+      "player_id": 26780,
+      "penalties_taken": 2,
+      "goals_scored": 2,
+      "profile_n": 2,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Left Foot",
+      "direction_probs": {
+        "Center": 0.066,
+        "Left": 0.4545,
+        "Right": 0.4796
+      },
+      "direction_ci": {
+        "Center": [
+          0.0651,
+          0.0,
+          0.2781
+        ],
+        "Left": [
+          0.4563,
+          0.1351,
+          0.7937
+        ],
+        "Right": [
+          0.4786,
+          0.1502,
+          0.8197
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0188,
+        "Bottom-Left": 0.3665,
+        "Bottom-Right": 0.3728,
+        "Mid-Center": 0.0157,
+        "Mid-Left": 0.0597,
+        "Mid-Right": 0.0628,
+        "Top-Center": 0.0314,
+        "Top-Left": 0.0283,
+        "Top-Right": 0.044
+      },
+      "height_probs": {
+        "High": 0.1037,
+        "Low": 0.7581,
+        "Mid": 0.1382
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.19,
+      "confidence": 0.2,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.451,
+          "Center": 0.099,
+          "Right": 0.451
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.004,
+        "naive_save_rate": 0.004,
+        "edge_over_naive": 0.0,
+        "exploitability": 0.066,
+        "commit_timing": "balanced"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.0,
+        "transitions": {
+          "Left": {
+            "Left": 0.454,
+            "Center": 0.066,
+            "Right": 0.48
+          },
+          "Center": {
+            "Left": 0.454,
+            "Center": 0.066,
+            "Right": 0.48
+          },
+          "Right": {
+            "Left": 0.454,
+            "Center": 0.066,
+            "Right": 0.48
+          }
+        },
+        "n_transitions": 1
+      }
+    },
+    "26848": {
+      "player_name": "Roberto Trashorras Gayoso",
+      "player_id": 26848,
+      "penalties_taken": 4,
+      "goals_scored": 2,
+      "profile_n": 2,
+      "conversion_rate": 0.5,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.066,
+        "Left": 0.6545,
+        "Right": 0.2796
+      },
+      "direction_ci": {
+        "Center": [
+          0.065,
+          0.0,
+          0.2761
+        ],
+        "Left": [
+          0.6553,
+          0.3049,
+          0.9297
+        ],
+        "Right": [
+          0.2797,
+          0.0367,
+          0.6215
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0188,
+        "Bottom-Left": 0.3665,
+        "Bottom-Right": 0.1728,
+        "Mid-Center": 0.0157,
+        "Mid-Left": 0.2597,
+        "Mid-Right": 0.0628,
+        "Top-Center": 0.0314,
+        "Top-Left": 0.0283,
+        "Top-Right": 0.044
+      },
+      "height_probs": {
+        "High": 0.1037,
+        "Low": 0.5581,
+        "Mid": 0.3382
+      },
+      "most_likely_direction": "Left",
+      "most_likely_zone": "Bottom-Left",
+      "predictability": 0.26,
+      "confidence": 0.2,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.652,
+          "Center": 0.095,
+          "Right": 0.253
+        },
+        "recommended_dive": "Left",
+        "taker_equilibrium": {
+          "Left": 0.388,
+          "Center": 0.224,
+          "Right": 0.388
+        },
+        "expected_save_rate": 0.165,
+        "naive_save_rate": 0.203,
+        "edge_over_naive": -0.038,
+        "exploitability": 0.266,
+        "commit_timing": "early"
+      },
+      "sequence": {
+        "pattern": "mixed",
+        "dependence": 0.405,
+        "transitions": {
+          "Left": {
+            "Left": 0.664,
+            "Center": 0.266,
+            "Right": 0.07
+          },
+          "Center": {
+            "Left": 0.654,
+            "Center": 0.066,
+            "Right": 0.28
+          },
+          "Right": {
+            "Left": 0.654,
+            "Center": 0.066,
+            "Right": 0.28
+          }
+        },
+        "n_transitions": 3
+      }
+    },
+    "27109": {
+      "player_name": "Youssef El-Arabi",
+      "player_id": 27109,
+      "penalties_taken": 7,
+      "goals_scored": 7,
+      "profile_n": 7,
+      "conversion_rate": 1.0,
+      "preferred_foot": "Right Foot",
+      "direction_probs": {
+        "Center": 0.033,
+        "Left": 0.3272,
+        "Right": 0.6398
+      },
+      "direction_ci": {
+        "Center": [
+          0.0334,
+          0.0,
+          0.1437
+        ],
+        "Left": [
+          0.3275,
+          0.1139,
+          0.5819
+        ],
+        "Right": [
+          0.6391,
+          0.3832,
+          0.864
+        ]
+      },
+      "zone_probs": {
+        "Bottom-Center": 0.0094,
+        "Bottom-Left": 0.2832,
+        "Bottom-Right": 0.3864,
+        "Mid-Center": 0.0079,
+        "Mid-Left": 0.0298,
+        "Mid-Right": 0.2314,
+        "Top-Center": 0.0157,
+        "Top-Left": 0.0141,
+        "Top-Right": 0.022
+      },
+      "height_probs": {
+        "High": 0.0518,
+        "Low": 0.6791,
+        "Mid": 0.2691
+      },
+      "most_likely_direction": "Right",
+      "most_likely_zone": "Bottom-Right",
+      "predictability": 0.305,
+      "confidence": 0.7,
+      "keeper_strategy": {
+        "keeper_strategy": {
+          "Left": 0.37,
+          "Center": 0.0,
+          "Right": 0.63
+        },
+        "recommended_dive": "Right",
+        "taker_equilibrium": {
+          "Left": 0.5,
+          "Center": 0.0,
+          "Right": 0.5
+        },
+        "expected_save_rate": 0.004,
+        "naive_save_rate": 0.005,
+        "edge_over_naive": -0.001,
+        "exploitability": 0.173,
+        "commit_timing": "early"
+      },
+      "sequence": {
+        "pattern": "memoryless",
+        "dependence": 0.043,
+        "transitions": {
+          "Left": {
+            "Left": 0.442,
+            "Center": 0.011,
+            "Right": 0.547
+          },
+          "Center": {
+            "Left": 0.327,
+            "Center": 0.033,
+            "Right": 0.64
+          },
+          "Right": {
+            "Left": 0.265,
+            "Center": 0.007,
+            "Right": 0.728
+          }
+        },
+        "n_transitions": 6
+      }
+    }
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "version": 2,
+  "validation": "temporal_walk_forward + stratified_cv_oof",
+  "intent_source": "goals",
+  "dataset_size": 244,
+  "n_goals": 191,
+  "unique_players": 79,
+  "freeze_frame_coverage": 0.1557,
+  "recency_weighting": true,
+  "date_range": [
+    "2004-10-24",
+    "2021-05-02"
+  ],
+  "models": {
+    "direction": {
+      "model_name": "Direction (L/C/R)",
+      "model_path": "models/xgb_direction_3.json",
+      "target": "direction_3",
+      "classes": [
+        "Center",
+        "Left",
+        "Right"
+      ],
+      "n_classes": 3,
+      "features": [
+        "is_right_foot",
+        "is_shootout",
+        "competition_tier",
+        "is_knockout",
+        "minute_bucket",
+        "is_extra_time",
+        "player_hist_left",
+        "player_hist_center",
+        "player_hist_right",
+        "player_hist_low_pct",
+        "player_penalty_count",
+        "player_conversion_rate",
+        "has_freeze_frame",
+        "gk_y_offset",
+        "gk_depth",
+        "ff_defenders",
+        "ff_teammates",
+        "taker_y_offset"
+      ],
+      "cv_accuracy": 0.5123,
+      "cv_logloss": 1.0084,
+      "cv_brier": 0.6077,
+      "calibration_ece": 0.0671,
+      "calibration_bins": [
+        {
+          "bin": "0.3-0.4",
+          "n": 1,
+          "avg_conf": 0.388,
+          "accuracy": 0.0
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 57,
+          "avg_conf": 0.458,
+          "accuracy": 0.439
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 94,
+          "avg_conf": 0.543,
+          "accuracy": 0.532
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 61,
+          "avg_conf": 0.652,
+          "accuracy": 0.525
+        },
+        {
+          "bin": "0.7-0.8",
+          "n": 21,
+          "avg_conf": 0.744,
+          "accuracy": 0.571
+        },
+        {
+          "bin": "0.8-0.9",
+          "n": 10,
+          "avg_conf": 0.838,
+          "accuracy": 0.6
+        }
+      ],
+      "baseline_accuracy": 0.4426,
+      "lift_over_baseline": 1.157,
+      "feature_importance": {
+        "gk_y_offset": 0.1243,
+        "has_freeze_frame": 0.1163,
+        "is_right_foot": 0.1159,
+        "gk_depth": 0.1026,
+        "player_hist_left": 0.0876,
+        "player_hist_low_pct": 0.086,
+        "player_hist_right": 0.0823,
+        "minute_bucket": 0.0815,
+        "player_conversion_rate": 0.0724,
+        "player_hist_center": 0.072,
+        "player_penalty_count": 0.0591,
+        "is_shootout": 0.0,
+        "competition_tier": 0.0,
+        "is_knockout": 0.0,
+        "is_extra_time": 0.0,
+        "ff_defenders": 0.0,
+        "ff_teammates": 0.0,
+        "taker_y_offset": 0.0
+      },
+      "class_distribution": {
+        "Center": 29,
+        "Left": 107,
+        "Right": 108
+      }
+    },
+    "zone": {
+      "model_name": "Zone (9-class)",
+      "model_path": "models/xgb_zone_9.json",
+      "target": "zone_9",
+      "classes": [
+        "Bottom-Center",
+        "Bottom-Left",
+        "Bottom-Right",
+        "Mid-Center",
+        "Mid-Left",
+        "Mid-Right",
+        "Top-Center",
+        "Top-Left",
+        "Top-Right"
+      ],
+      "n_classes": 9,
+      "features": [
+        "is_right_foot",
+        "is_shootout",
+        "competition_tier",
+        "is_knockout",
+        "minute_bucket",
+        "is_extra_time",
+        "player_hist_left",
+        "player_hist_center",
+        "player_hist_right",
+        "player_hist_low_pct",
+        "player_penalty_count",
+        "player_conversion_rate",
+        "has_freeze_frame",
+        "gk_y_offset",
+        "gk_depth",
+        "ff_defenders",
+        "ff_teammates",
+        "taker_y_offset"
+      ],
+      "cv_accuracy": 0.3197,
+      "cv_logloss": 1.9405,
+      "cv_brier": 0.8266,
+      "calibration_ece": 0.0741,
+      "calibration_bins": [
+        {
+          "bin": "0.1-0.2",
+          "n": 5,
+          "avg_conf": 0.187,
+          "accuracy": 0.0
+        },
+        {
+          "bin": "0.2-0.3",
+          "n": 48,
+          "avg_conf": 0.253,
+          "accuracy": 0.312
+        },
+        {
+          "bin": "0.3-0.4",
+          "n": 101,
+          "avg_conf": 0.348,
+          "accuracy": 0.327
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 65,
+          "avg_conf": 0.437,
+          "accuracy": 0.338
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 22,
+          "avg_conf": 0.533,
+          "accuracy": 0.273
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 3,
+          "avg_conf": 0.655,
+          "accuracy": 0.667
+        }
+      ],
+      "baseline_accuracy": 0.2787,
+      "lift_over_baseline": 1.147,
+      "feature_importance": {
+        "gk_y_offset": 0.2625,
+        "has_freeze_frame": 0.1331,
+        "is_right_foot": 0.104,
+        "player_hist_right": 0.0833,
+        "player_hist_left": 0.0783,
+        "player_conversion_rate": 0.0768,
+        "player_hist_low_pct": 0.0767,
+        "player_hist_center": 0.0732,
+        "minute_bucket": 0.0596,
+        "player_penalty_count": 0.0525,
+        "is_shootout": 0.0,
+        "competition_tier": 0.0,
+        "is_knockout": 0.0,
+        "is_extra_time": 0.0,
+        "gk_depth": 0.0,
+        "ff_defenders": 0.0,
+        "ff_teammates": 0.0,
+        "taker_y_offset": 0.0
+      },
+      "class_distribution": {
+        "Bottom-Center": 7,
+        "Bottom-Left": 68,
+        "Bottom-Right": 66,
+        "Mid-Center": 8,
+        "Mid-Left": 30,
+        "Mid-Right": 26,
+        "Top-Center": 14,
+        "Top-Left": 9,
+        "Top-Right": 16
+      }
+    },
+    "height": {
+      "model_name": "Height (L/M/H)",
+      "model_path": "models/xgb_height_3.json",
+      "target": "height_3",
+      "classes": [
+        "High",
+        "Low",
+        "Mid"
+      ],
+      "n_classes": 3,
+      "features": [
+        "is_right_foot",
+        "is_shootout",
+        "competition_tier",
+        "is_knockout",
+        "minute_bucket",
+        "is_extra_time",
+        "player_hist_left",
+        "player_hist_center",
+        "player_hist_right",
+        "player_hist_low_pct",
+        "player_penalty_count",
+        "player_conversion_rate",
+        "has_freeze_frame",
+        "gk_y_offset",
+        "gk_depth",
+        "ff_defenders",
+        "ff_teammates",
+        "taker_y_offset"
+      ],
+      "cv_accuracy": 0.5615,
+      "cv_logloss": 0.9964,
+      "cv_brier": 0.586,
+      "calibration_ece": 0.1018,
+      "calibration_bins": [
+        {
+          "bin": "0.3-0.4",
+          "n": 9,
+          "avg_conf": 0.372,
+          "accuracy": 0.333
+        },
+        {
+          "bin": "0.4-0.5",
+          "n": 48,
+          "avg_conf": 0.464,
+          "accuracy": 0.396
+        },
+        {
+          "bin": "0.5-0.6",
+          "n": 58,
+          "avg_conf": 0.544,
+          "accuracy": 0.672
+        },
+        {
+          "bin": "0.6-0.7",
+          "n": 81,
+          "avg_conf": 0.651,
+          "accuracy": 0.506
+        },
+        {
+          "bin": "0.7-0.8",
+          "n": 39,
+          "avg_conf": 0.746,
+          "accuracy": 0.718
+        },
+        {
+          "bin": "0.8-0.9",
+          "n": 7,
+          "avg_conf": 0.826,
+          "accuracy": 0.714
+        },
+        {
+          "bin": "0.9-1.0",
+          "n": 2,
+          "avg_conf": 0.915,
+          "accuracy": 1.0
+        }
+      ],
+      "baseline_accuracy": 0.5779,
+      "lift_over_baseline": 0.972,
+      "feature_importance": {
+        "gk_depth": 0.1285,
+        "has_freeze_frame": 0.1149,
+        "gk_y_offset": 0.1054,
+        "player_hist_left": 0.098,
+        "player_hist_center": 0.089,
+        "player_hist_low_pct": 0.0764,
+        "player_hist_right": 0.0764,
+        "is_right_foot": 0.0752,
+        "player_conversion_rate": 0.0738,
+        "player_penalty_count": 0.0687,
+        "minute_bucket": 0.0612,
+        "taker_y_offset": 0.0325,
+        "is_shootout": 0.0,
+        "competition_tier": 0.0,
+        "is_knockout": 0.0,
+        "is_extra_time": 0.0,
+        "ff_defenders": 0.0,
+        "ff_teammates": 0.0
+      },
+      "class_distribution": {
+        "High": 39,
+        "Low": 141,
+        "Mid": 64
+      }
+    }
+  },
+  "ensemble": {
+    "overall": {
+      "XGBoost": {
+        "accuracy": 0.5123,
+        "logloss": 1.0084
+      },
+      "Bayesian": {
+        "accuracy": 0.4795,
+        "logloss": 1.0042
+      },
+      "Ensemble": {
+        "accuracy": 0.5,
+        "logloss": 0.9953
+      }
+    },
+    "by_depth": {
+      "Cold start (0 priors)": {
+        "accuracy": 0.4177,
+        "n": 79
+      },
+      "1-2 priors": {
+        "accuracy": 0.5909,
+        "n": 44
+      },
+      "3-7 priors": {
+        "accuracy": 0.5116,
+        "n": 43
+      },
+      "8+ priors": {
+        "accuracy": 0.5256,
+        "n": 78
+      }
+    }
+  },
+  "notes": "All accuracy numbers are out-of-fold / walk-forward and reflect what a scout could know at kick time. History/context-only ceiling in the literature is ~60-65%; video+pose models reach ~85-89%."
+}
