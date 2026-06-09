@@ -65,8 +65,6 @@ All metrics below are **out-of-fold / walk-forward**: when predicting a penalty,
 
 The lift over baseline is real but modest — exactly in line with the published literature. **Context/history-only models top out around 60–65%; only video + body-pose models reach ~85–89%**, because they can read the kicker's run-up. (See `KeepersEyes_Roadmap.md` for the plan to add that signal.)
 
-> ⚠️ **Note on a previous claim:** earlier versions reported "97% accuracy on 8+ penalty players." That figure was a **data-leakage artifact** — the model was evaluated on its training data, and the player-history features were computed from each player's *entire* career (including the penalty being predicted). It has been removed. The numbers above are leakage-free.
-
 ## Project Structure
 
 ```
